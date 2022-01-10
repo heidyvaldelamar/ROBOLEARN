@@ -141,6 +141,9 @@
   <ItemGroup>
     <None Include="Source.py" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\Downloads\RH.jpg" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
