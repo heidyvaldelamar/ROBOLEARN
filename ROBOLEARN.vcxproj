@@ -24,6 +24,7 @@
     <ProjectGuid>{df5848bc-5b2a-45b9-b656-5ba213a2f09d}</ProjectGuid>
     <RootNamespace>ROBOLEARN</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>CityTM</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="Source.py" />
+    <None Include="main.py" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\Downloads\RH.jpg" />

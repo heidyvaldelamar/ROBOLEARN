@@ -18,7 +18,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Source.py">
+    <None Include="main.py">
       <Filter>Tkniter</Filter>
     </None>
   </ItemGroup>
