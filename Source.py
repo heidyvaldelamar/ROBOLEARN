@@ -1,25 +1,34 @@
 from tkinter import *
+from tkinter import messagebox
+# import numpy as np
+import time
+
+# APARIENCIA DE LA GUI
+
+# root = Tk()                                                                 # Mengisi variabel root dengan TK() dari tkinter                
+# root.geometry("500x500")                                                    # Mengatur ukuran window GUI sebesar 500x500
+# root.iconbitmap("D:\Coding\Python\Tkinter Project\Matrix Calculator\matrix.ico")   # Memberi icon pada GUI yang diambil dari folder
+# root.title("City Traffic Mannager / 19081010001")                        # Mengatur title GUI yang terletak dikanan icon
+# root.configure(bg = "#474E64")  
+
+
+
 
 window = Tk()
 
-window.title("ROBOLEARN")
+window.title("City Traffic Manager")
+window.geometry("500x500")
+window.configure(bg = "#474E64")
 
-lbl = Label(window, text = "\nWelcome\nback!\n", font=("Century Gothic", 12), width = 8, height = 4)
-lbl.grid (column = 0, row = 0)
+lbl = Label(window, text = "\nWelcome back!\nCity Traffic Manager is ready to use.\n", font=("Consolas", 10), width = 100, height = 4)
+lbl.grid (column = [1], row = 0)
 
 def clicked():
-    window = Tk()
-    window.title("MEC")
-btnmec = Button(window, text="MEC", font=("Century Gothic", 12), bg="midnightblue", fg="mintcream", width = 8, command=clicked)
+   window = Tk()
+   window.title("Traffic Data")
+btnmec = Button(window, text="Start", font=("Consolas", 12), bg="midnightblue", fg="mintcream", width = 8, command=clicked)
 btnmec.grid(column=0, row=1)
-btnprgm = Button(window, text="PRGM", font=("Century Gothic", 12), bg="forestgreen", fg="azure", width = 8)
-btnprgm.grid(column=0, row=2)
-btnb = Button(window, text="BSS", font=("Century Gothic", 12), bg="midnightblue", fg="mintcream", width = 8)
-btnb.grid(column=0, row=3)
-btni = Button(window, text = "MERC", font=("Century Gothic", 12), bg="forestgreen", fg="azure", width = 8)
-btni.grid(column = 0, row = 4)
-btnwb = Button(window, text = "WB", font=("Century Gothic", 12), bg="midnightblue", fg="mintcream", width = 8)
-btnwb.grid(column = 0, row = 5)
-btnl = Button(window, text = "LS", font=("Century Gothic", 12), bg="forestgreen", fg="azure", width = 8)
-btnl.grid(column = 0, row = 6)
+
+
 window.mainloop()
+
