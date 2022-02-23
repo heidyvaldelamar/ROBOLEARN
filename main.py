@@ -1,33 +1,28 @@
-from tkinter import *
+import tkinter as tk
 from tkinter import messagebox
-# import numpy as np
+import numpy as np
 import time
 
-# APARIENCIA DE LA GUI
-
-# root = Tk()                                                                 # Mengisi variabel root dengan TK() dari tkinter                
-# root.geometry("500x500")                                                    # Mengatur ukuran window GUI sebesar 500x500
-# root.iconbitmap("D:\Coding\Python\Tkinter Project\Matrix Calculator\matrix.ico")   # Memberi icon pada GUI yang diambil dari folder
-# root.title("City Traffic Mannager / 19081010001")                        # Mengatur title GUI yang terletak dikanan icon
-# root.configure(bg = "#474E64")  
-
-
-
-
-window = Tk()
+# ======================================================== GUI SET UP ====================================================
+window = tk.Tk()
 
 window.title("City Traffic Manager")
 window.geometry("500x500")
 window.configure(bg = "#474E64")
+window.rowconfigure(0, minsize=800, weight=1)
+window.columnconfigure(1, minsize=800, weight=1)
 
-lbl = Label(window, text = "\nWelcome back!\nCity Traffic Manager is ready to use.\n", font=("Consolas", 10), width = 100, height = 4)
-lbl.grid (column = [1], row = 0)
 
-def clicked():
-   window = Tk()
-   window.title("Traffic Data")
-btnmec = Button(window, text="Start", font=("Consolas", 12), bg="midnightblue", fg="mintcream", width = 8, command=clicked)
-btnmec.grid(column=0, row=1)
+# ======================================================== WIDGETS =======================================================
+
+txt_edit = tk.Text(window)
+fr_buttons = tk.Frame(window)
+btn_open = tk.Button(fr_buttons, text="Home")
+btn_save = tk.Button(fr_buttons, text="Data Base")
+btn_open.grid(row=0, column=0, sticky="ew", padx=5, pady=5)
+btn_save.grid(row=1, column=0, sticky="ew", padx=5)
+fr_buttons.grid(row=0, column=0, sticky="ns")
+txt_edit.grid(row=0, column=1, sticky="nsew")
 
 
 window.mainloop()
