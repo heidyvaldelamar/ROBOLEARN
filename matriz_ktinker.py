@@ -199,6 +199,8 @@ etiqueta8.grid(column = 6, row = 1, ipadx = 5, ipady = 5, padx = 5, sticky = NS)
 etiqueta8.config(bg = "lavenderblush3", fg = "white")
 etiqueta8.columnconfigure(6, weight=1)
 etiqueta8.rowconfigure(1, weight= 1)
+
+
 #===============================================================================================================================================================================================
 app.mainloop()
 
