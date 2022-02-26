@@ -4,11 +4,23 @@ from ctypes.wintypes import SIZE
 from sys import maxsize
 from tkinter import *
 from turtle import width
+from xml.etree.ElementInclude import include
+
+from numpy import matrix
+
 #===============================================================================================================================================================================================
+##include matrix ##
 ## Crear la GUI ##
 app = Tk()  # contenedor
 app.title("Calculadora de Tránsito Vial") 
 app.config(bg = "lavenderblush3")
+
+
+# definir Gauss - Jordan#
+##def GAUSSJORDAN ##
+
+
+
 #===============================================================================================================================================================================================
 # Título#
 T = Frame(app)
@@ -27,7 +39,7 @@ titulo2.config(bg = "lavenderblush3", fg = "white")
 
 
 # imágenes (descripción y esquema)
-img1 = PhotoImage(file ="descripcion Small.png")
+img1 = PhotoImage(file ="descripción Small.png")
 
 lbl_img1 = Label(app, image = img1)
 lbl_img1.grid(column = 0, row = 1, rowspan = 7, ipadx= 20, ipady= 20)
@@ -187,14 +199,14 @@ etiqueta7.grid(column = 5, row = 1, ipadx = 5, ipady = 5, padx = 5, sticky = NS)
 etiqueta7.config(bg = "lavenderblush3", fg = "white")
 etiqueta7.columnconfigure(5, weight=1)
 etiqueta7.rowconfigure(1, weight= 1)
-# f
+# k
 f = Frame(app)
 f.grid(column = 6, row = 1, ipadx = 5, ipady = 5, sticky = NS)
 
 f.config(bg = "lavenderblush3")
 f.columnconfigure(6, weight=1)
 f.rowconfigure(1, weight= 1)
-etiqueta8 = Label (f, text = "f")
+etiqueta8 = Label (f, text = "k")
 etiqueta8.grid(column = 6, row = 1, ipadx = 5, ipady = 5, padx = 5, sticky = NS)
 etiqueta8.config(bg = "lavenderblush3", fg = "white")
 etiqueta8.columnconfigure(6, weight=1)
@@ -202,5 +214,10 @@ etiqueta8.rowconfigure(1, weight= 1)
 
 
 #===============================================================================================================================================================================================
+# Boton #
+botonenviar = Button(app, text = "enviar", fg = "white", width = 3) #AGREGAR DEF DE GAUSS-JORDAN
+botonenviar.grid(column = 4, row = 6, sticky = NS)
+botonenviar.config(bg = "lavenderblush3", fg = "lavenderblush3")
+
 app.mainloop()
 
